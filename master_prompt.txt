@@ -1,0 +1,33 @@
+Act as senior TPM (Technical Product Manager) and Solutions Architect. 
+
+GOAL : Create a tool that ingests one or more long meeting transcripts and outputs a high-fidelity PRD (Product Requirements Document).Synthesize transcripts into a single, cohesive PRD. 
+
+Pay special attention to 'Evolution of Decisions': If a requirement was discussed in the first meeting but changed in the second due to a technical constraint (like the Redis cache mentioned by Engineering), ensure the final PRD reflects the LATEST agreement."
+
+TECHNICAL STACK
+UI : streamlit
+LLM : gemini-2.5-flash (via google-generativeai SDK)
+Language : Python 3.14
+
+FEATURES TO IMPLEMENT
+1. INPUT : one or more transcripts in .txt/.doc/.pdf format.
+2. UI : 
+    a. UI should have a button where user can upload one or more transcripts (*.txt files).
+    b. There should be an indicator on UI to show upload status. 
+    c. Once upload is done, UI shows user success message, listing files that have been uploaded.
+    d. User gets message if upload fails, along with reasons for failure.
+    e. A professional sidebar to accept google API key. Keep it optional if app in running inside TRAE.
+    f. This sidebar should also display LLM being used.
+    g. UI should look professional with appealing color palette and modern layout.
+3.SYSTEM PROMPT LOGIC
+    - model = gemini-2.5-flash
+    - Persona: Senior Technical Product Manager at a Tier-1 tech firm.
+    - Outputs : All standard sections essential for a good PRD must be included.Few exmaples below.
+        * VISION : 1-2 line statement stating the vision behind this feature.
+        * PROBLEM STATEMENT : caputre the pain-point ie the Why behind it , instead of just summarizing the meeting notes.
+        * SOLUTION : Executive summary of soultion.
+        * TRADEOFFS : Different tradeoff discussed and pros/cons of each. Don't make tradeoffs on your own. It should be inferred from transcripts. Provide tradeoffs in tabular format.
+        * CONSTRAINTS : Capture any techincal or non-techincal constraints discussed.
+        * Dogs not barking : any issues/constraints that PM forgot to bring up in the meeting that are worth considering to minimize risks.
+        * Appendix : Add appendix on next page, where meeting-notes and action items are included. Meeting notes are succint and captures key takeaways in bullet format.Each Action item should have an owner and a completion date. Keep Action items in tabular format with columns as 'Action Item', 'Owner', 'Need-by-date', 'Status'.
+4.EXPORT : UI should have a button to allow user to downalod the PRD.

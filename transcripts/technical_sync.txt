@@ -1,0 +1,19 @@
+TRANSCRIPT: Project Health Dashboard - Tech Review
+Date: Feb 12, 2026
+Attendees: Sarah (PM), Mike (Eng)
+
+Sarah: Mike, David and I settled on a Traffic Light dashboard with PDF exports. What's the lift?
+
+Mike: The dashboard itself is fine, but the data source is the problem. Our ERP system only syncs once a day. If you want "current" status, we have a latency issue.
+
+Sarah: Can we hit the ERP API directly?
+
+Mike: We could, but it has strict rate limits. If 50 PMs refresh the dashboard at once, we'll get blocked. We need a middle-layer cache—maybe Redis—to store the latest pull.
+
+Sarah: Okay, build the cache. What about the PDF export?
+
+Mike: I'll use the 'ReportLab' library in the Python backend. It’s reliable for generating the RAG charts in a PDF format. 
+
+Sarah: One more thing—David wants a "Mobile First" view later, but I told him Desktop-only for the MVP to save time. 
+
+Mike: Smart. I'll focus on the desktop layout and the Redis integration for now.

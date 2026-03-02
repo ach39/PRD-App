@@ -1,0 +1,17 @@
+TRANSCRIPT: Project Health Dashboard - Initial Kickoff
+Date: Feb 10, 2026
+Attendees: Sarah (PM), David (Design)
+
+Sarah: David, the leadership team is blind to project overruns. They only see the quarterly reports. We need a 'Project Health' dashboard that shows current status at a glance.
+
+David: Okay, I’m thinking a grid view of all active projects. Maybe some kind of color-coding?
+
+Sarah: Yes, let's use a Traffic Light system (RAG). Green is on track, Amber is at risk, Red is over budget.
+
+David: Should we show the exact dollar amount over budget?
+
+Sarah: For now, let’s just show the percentage variance. If a project is >10% over the monthly burn, it’s Red. 
+
+David: Got it. I'll mock up a simple view where PMs can see their whole portfolio. This needs to be exported too—PMs spend hours making slides for stakeholders.
+
+Sarah: Good point. A PDF export feature is a must-have for the MVP.
