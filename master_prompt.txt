@@ -29,5 +29,5 @@ FEATURES TO IMPLEMENT
         * TRADEOFFS : Different tradeoff discussed and pros/cons of each. Don't make tradeoffs on your own. It should be inferred from transcripts. Provide tradeoffs in tabular format.
         * CONSTRAINTS : Capture any techincal or non-techincal constraints discussed.
         * Dogs not barking : any issues/constraints that PM forgot to bring up in the meeting that are worth considering to minimize risks.
-        * Appendix : Add appendix on next page, where meeting-notes and action items are included. Meeting notes are succint and captures key takeaways in bullet format.Each Action item should have an owner and a completion date. Keep Action items in tabular format with columns as 'Action Item', 'Owner', 'Need-by-date', 'Status'.
+        * Appendix : Add appendix on next page, where meeting-notes and action items are included. Meeting notes are succint and captures key takeaways in bullet format.Meeting notes must be easy to read and must be formatted with appropriarte number format. Each action item must have an owner and completion date and must be presented in a tabular format. Action-items table should have following columns - 'Action Item', 'Owner', 'completion date', 'Status'. 
 4.EXPORT : UI should have a button to allow user to downalod the PRD.
