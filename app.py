@@ -32,11 +32,13 @@ def generate_prd(api_key, transcript_content):
 
     *   **[VISION]:** A 1-2 line statement stating the vision behind this feature.
     *   **[PROBLEM STATEMENT]:** Capture the pain-point, the 'Why' behind it, instead of just summarizing the meeting notes.
-    *   **[SOLUTION]:** An executive summary of the solution.
+    *   **[SOLUTION]:** An executive summary of the solution. Add architecture diagram if applicable. Add high-level flow chart if applicable.Add any assumptions made.
     *   **[TRADEOFFS]:** Discuss the different tradeoffs mentioned in the transcript, including the pros and cons of each. Do not make up tradeoffs.
     *   **[CONSTRAINTS]:** Capture any technical or non-technical constraints discussed.
-    *   **[Dogs not barking]:** Mention any issues/constraints that were not brought up in the meeting but are worth considering to minimize risks.
-    *   **[Appendix]:** On a new page, include succinct meeting notes in bullet format and a list of action items. Each action item should have an owner and a completion date.
+    *   **[DOGS NOT BARKING]:** Mention any issues/constraints that were not brought up in the meeting but are worth considering to minimize risks.
+    *   **[USER STORIES]:** Add user stories in INVEST format.
+    *   **[APPENDIX]:** Add appendix on next page, where meeting-notes and action items are included. Meeting notes are succint and captures key takeaways in bullet format.Meeting notes must be easy to read and must be formatted with appropriarte number format. Each action item must have an owner and completion date and must be presented in a tabular format. Action-items table should have following columns - 'Action Item', 'Owner', 'completion date', 'Status'. 
+     
 
     **Transcript(s):**
     {transcript_content}
