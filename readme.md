@@ -14,11 +14,11 @@ This project was built to demonstrate the intersection of AI Engineering and Pro
 
 1. **Multi-File Context:** Upload multiple `.txt` transcripts (e.g., Kickoff + Tech Sync).
 2. **Conflict Resolution:** Identifies when requirements change between meetings.
-3. **TPM-Standard Output:** Generates structured PRDs including:
+3. **TPM-Standard Output:** Generates structured PRD including:
       - Vision & Root Problem
       - Gherkin-style User Stories (Given/When/Then)
       - Technical Constraints & Blockers
-      - Named Action Items
+      - Action Items with owners and need-by dates.
 4. **Markdown Export:** Download the final PRD for immediate use in Jira, Confluence, or Notion.
 
 ---
