@@ -30,6 +30,25 @@ This project was built to demonstrate the intersection of AI Engineering and Pro
 
 ---
 
+## TOOL IN ACTION
+
+User feeds meeting transcripts to the App, and the App synthesizes the information into a single, cohesive PRD.
+
+```
+[Meeting Transcripts (TXT/PDF/DOCX)]
+              | 
+              V
+       [PM-Sight App]
+              | 
+              V
+[Structured PRD (Markdown)]
+```
+
+**Input** : [Meeting Transcripts](Demo/Transcripts)  
+**Output** : [Generated PRD](Demo/Generated-PRD.md)
+
+---
+
 ## 🛠️ Technical Architecture
 
 - **LLM:** Google Gemini 2.5 Flash (1M Token Context Window)
